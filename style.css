@@ -1,0 +1,35 @@
+body {
+  background-color: white;
+  color: blue;
+}
+
+body .container {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+body .box {
+  padding: 3rem;
+  display: block;
+  margin: 5rem;
+}
+
+body .left-box, body .right-box {
+  border: 1px solid red;
+}
+
+body .left-box:hover, body .right-box:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+body .right-box {
+  border-color: green;
+}
+
+body .right-box:hover {
+  background-color: red;
+}

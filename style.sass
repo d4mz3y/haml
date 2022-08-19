@@ -1,0 +1,33 @@
+$color1: red
+$color2: green
+    
+body
+    background-color: white
+    color: blue
+
+    .container 
+        border: none
+        display: flex
+        flex-direction: row
+        justify-content: center
+        margin: 0 auto
+
+    .box 
+        padding: 3rem
+        display: block
+        margin: 5rem
+    
+    .left-box
+        border: 1px solid $color1
+
+    .left-box:hover 
+        background-color: $color2
+        transform: scale(1.1)
+
+    .right-box
+        @extend .left-box
+        border-color: $color2
+
+    .right-box:hover
+        @extend .left-box:hover
+        background-color: $color1
